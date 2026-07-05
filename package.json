@@ -1,0 +1,63 @@
+{
+  "name": "@bybrave/qrcode-terminal2",
+  "version": "1.0.0",
+  "description": "Maintained fork of qrcode-terminal — render QR codes in the terminal, with dual ESM+CJS, bundled TypeScript types (no separate @types/qrcode-terminal), and a strict-mode/ESM fix",
+  "main": "lib/main.js",
+  "types": "index.d.ts",
+  "bin": {
+    "qrcode-terminal2": "bin/qrcode-terminal.js"
+  },
+  "exports": {
+    ".": {
+      "types": "./index.d.ts",
+      "import": "./index.mjs",
+      "require": "./lib/main.js"
+    },
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "lib",
+    "vendor",
+    "bin",
+    "index.mjs",
+    "index.d.ts",
+    "NOTICE"
+  ],
+  "scripts": {
+    "test": "node --test test/*.test.js",
+    "test-types": "tsc --noEmit --strict test/type-declarations.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bybraveHQ/qrcode-terminal2.git"
+  },
+  "bugs": {
+    "url": "https://github.com/bybraveHQ/qrcode-terminal2/issues"
+  },
+  "homepage": "https://github.com/bybraveHQ/qrcode-terminal2#readme",
+  "keywords": [
+    "ansi",
+    "ascii",
+    "qrcode",
+    "qr",
+    "terminal",
+    "console",
+    "cli",
+    "typescript",
+    "esm"
+  ],
+  "author": "bybrave (https://github.com/bybraveHQ)",
+  "contributors": [
+    "Gord Tanner (author of the original qrcode-terminal)",
+    "Michael Brooks (author of the original qrcode-terminal)"
+  ],
+  "license": "Apache-2.0",
+  "funding": "https://ko-fi.com/bybrave",
+  "engines": {
+    "node": ">=18"
+  },
+  "devDependencies": {
+    "@types/node": "^20.14.0",
+    "typescript": "^5.5.0"
+  }
+}

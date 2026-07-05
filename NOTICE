@@ -1,0 +1,25 @@
+@bybrave/qrcode-terminal2
+
+A maintained fork of qrcode-terminal (https://github.com/gtanner/qrcode-terminal).
+
+Original work Copyright (c) Gord Tanner and Michael Brooks, licensed under the
+Apache License, Version 2.0 (see LICENSE).
+
+Modifications in this fork Copyright (c) 2026 bybrave, licensed under the same
+Apache License, Version 2.0. Changes from the original 0.12.0 release:
+  - ANSI escape sequences rewritten from octal (\033) to hex (\x1b) so the
+    source is valid in strict mode / ES modules (upstream issue #52); the
+    rendered terminal output is byte-for-byte identical.
+  - generate() now returns the rendered string in addition to invoking the
+    callback / console.log (upstream issue #24).
+  - Dual ESM + CommonJS packaging and bundled TypeScript type definitions
+    (upstream issue #27).
+
+This product includes software from the following project, unchanged:
+
+  QRCode for JavaScript
+  Copyright (c) 2009 Kazuhiko Arase
+  Licensed under the MIT license (http://www.opensource.org/licenses/mit-license.php)
+  URL: http://www.d-project.com/
+  Located in ./vendor/QRCode
+  "QR Code" is a registered trademark of DENSO WAVE INCORPORATED.
