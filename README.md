@@ -86,6 +86,15 @@ Remove `@types/qrcode-terminal` — the types ship with this package. **Requires
 - **Small QR codes may not scan on some terminal fonts** ([#21](https://github.com/gtanner/qrcode-terminal/issues/21), [#44](https://github.com/gtanner/qrcode-terminal/issues/44)). The `{ small: true }` half-block rendering packs two module rows into one character row; on fonts/terminals with non-square cells or line-height gaps the scanner can't resolve the modules. This is a terminal rendering constraint, not something the library can fix reliably — use a terminal with a square monospace font, or the default (larger) rendering, if a code won't scan.
 - **You can't set an arbitrary pixel size** ([#51](https://github.com/gtanner/qrcode-terminal/issues/51), [#9](https://github.com/gtanner/qrcode-terminal/issues/9)). A QR code's dimensions are determined by how much data it encodes and the chosen version/error-correction level — it can't be stretched to a target width in the terminal. Shorten the payload or lower the error-correction level to get a smaller code.
 
+## Support
+
+If this package saves you time, you can support maintenance:
+
+[![Ko-fi](https://img.shields.io/badge/Ko--fi-buy%20me%20a%20coffee-FF5E5B?logo=kofi&logoColor=white)](https://ko-fi.com/bybrave)
+[![Bitcoin](https://img.shields.io/badge/Bitcoin-BTC-F7931A?logo=bitcoin&logoColor=white)](#support)
+
+Bitcoin (BTC): `bc1q37557q5jpeaxqydzwvf3jgj7zhnfpn2td3q40q`
+
 ## License
 
 Apache-2.0. Copyright (c) Gord Tanner and Michael Brooks (original `qrcode-terminal`); modifications copyright (c) 2026 bybrave. The vendored QR engine (`vendor/QRCode`) is MIT, copyright (c) 2009 Kazuhiko Arase. See [LICENSE](./LICENSE) and [NOTICE](./NOTICE).

@@ -1,6 +1,6 @@
 {
   "name": "@bybrave/qrcode-terminal2",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Maintained fork of qrcode-terminal — render QR codes in the terminal, with dual ESM+CJS, bundled TypeScript types (no separate @types/qrcode-terminal), and a strict-mode/ESM fix",
   "main": "lib/main.js",
   "types": "index.d.ts",
